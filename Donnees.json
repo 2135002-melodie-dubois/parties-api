@@ -1,0 +1,118 @@
+[
+  {
+    "nom_joueur": {
+      "identifiant": "player",
+      "surnom": "PLYR"
+    },
+    "nombre_cases": 10,
+    "date_partie": "2025-11-24",
+    "ennemis_rencontrés": [
+      {
+        "nom": "Loup",
+        "estAggressif": true,
+        "aGagne": true,
+        "valeur": 0
+      }
+    ],
+    "score_final": 5,
+    "cause_mort": {
+      "cause": "Faim"
+    },
+    "est_valide": false,
+    "raison_invalide": "Je ne l'aime pas"
+  },
+  {
+    "nom_joueur": {
+      "identifiant": "melo",
+      "surnom": "MELO"
+    },
+    "nombre_cases": 10,
+    "date_partie": "2025-11-24",
+    "ennemis_rencontrés": [
+      {
+        "nom": "Loup",
+        "estAggressif": true,
+        "aGagne": true,
+        "valeur": 0
+      }
+    ],
+    "score_final": 20,
+    "cause_mort": {
+      "cause": "Faim"
+    },
+    "est_valide": true,
+    "raison_invalide": ""
+  },
+  {
+    "nom_joueur": {
+      "identifiant": "melo",
+      "surnom": "COOL"
+    },
+    "nombre_cases": 10,
+    "date_partie": "2025-11-24",
+    "ennemis_rencontrés": [
+      {
+        "nom": "Loup",
+        "estAggressif": true,
+        "aGagne": true,
+        "valeur": 0
+      }
+    ],
+    "score_final": 15,
+    "cause_mort": {
+      "cause": "Faim"
+    },
+    "est_valide": true,
+    "raison_invalide": ""
+  },
+  {
+    "nom_joueur": {
+      "identifiant": "ntscool",
+      "surnom": "COOL"
+    },
+    "nombre_cases": 10,
+    "date_partie": "2025-11-24",
+    "ennemis_rencontrés": [
+      {
+        "nom": "Bandit",
+        "estAggressif": true,
+        "aGagne": true,
+        "valeur": 0
+      },
+      {
+        "nom": "Lapin",
+        "estAggressif": false,
+        "aGagne": false,
+        "valeur": 0
+      },
+      {
+        "nom": "Ours",
+        "estAggressif": true,
+        "aGagne": false,
+        "valeur": 0
+      }
+    ],
+    "score_final": 100,
+    "cause_mort": {
+      "cause": "Ennemi",
+      "description": "Ours"
+    },
+    "est_valide": true,
+    "raison_invalide": ""
+  },
+  {
+    "nom_joueur": {
+      "identifiant": "flutter",
+      "surnom": "FLTR"
+    },
+    "nombre_cases": 10,
+    "date_partie": "2025-11-24",
+    "ennemis_rencontrés": [],
+    "score_final": 10,
+    "cause_mort": {
+      "cause": "Fatigue"
+    },
+    "est_valide": true,
+    "raison_invalide": ""
+  }
+]
