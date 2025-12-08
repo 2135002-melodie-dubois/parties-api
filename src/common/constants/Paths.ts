@@ -13,7 +13,7 @@ export default {
     delete: '/',
   },
   GenerateToken: {
-    Base: '/token',
+    Base: '/generatetoken',
     Get: '/',
   },
 } as const;
