@@ -146,6 +146,4 @@ describe('UserRouter', () => {
 });
 */
 
-describe('Test', () => {
-  test('test', () => {});
-});
+describe('Test', () => {});
