@@ -44,13 +44,13 @@ async function ajouter(partie: IPartie): Promise<void> {
   const nouvellepartie = new Partie(partie);
   if (!nouvellepartie.nom_joueur.surnom) {
     nouvellepartie.nom_joueur.surnom = creerSurnom(
-      nouvellepartie.nom_joueur.identifiant
+      nouvellepartie.nom_joueur.identifiant,
     );
   }
   nouvellepartie.date_partie = new Date(Date.now());
   nouvellepartie.score_final = calculerScore(
     nouvellepartie.nombre_cases,
-    nouvellepartie.ennemis_rencontrés
+    nouvellepartie.ennemis_rencontrés,
   );
   nouvellepartie.est_valide = true;
   nouvellepartie.raison_invalide = '';

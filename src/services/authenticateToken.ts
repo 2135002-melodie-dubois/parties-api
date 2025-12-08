@@ -7,7 +7,7 @@ import ENV from '@src/common/constants/ENV';
  *
  * @param {Request} req - La requête au serveur
  * @param {Response} res - La réponse du serveur
- * @param {NextFunction} next - La fonction a appeler pour continuer le processus.
+ * @param {NextFunction} next - La fonction a appeler.
  */
 function authenticateToken(req: Request, res: Response, next: NextFunction) {
   // Ne pas vérifier le token si l'url est celui de generatetoken

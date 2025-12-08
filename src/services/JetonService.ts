@@ -17,7 +17,7 @@ export const UTILISATEUR_NOT_FOUND_ERR = 'Utilisateur non trouvé';
  */
 async function generateToken(utilisateur: IUserLogin): Promise<string> {
   const utilisateurBD = (await UserService.getAll()).find(
-    (user) => user.email === utilisateur.email
+    (user) => user.email === utilisateur.email,
   );
   if (utilisateurBD && utilisateurBD.password === utilisateur.password) {
     return jwt.sign(utilisateur.email, ENV.Jwtsecret);

@@ -16,5 +16,5 @@ const SERVER_START_MSG =
 ******************************************************************************/
 
 connect(ENV.Mongodb).then(() =>
-  server.listen(ENV.Port, () => logger.info(SERVER_START_MSG))
+  server.listen(ENV.Port, () => logger.info(SERVER_START_MSG)),
 );

@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction, Router, json } from 'express';
+import { Request, Response, NextFunction, Router } from 'express';
 
 import Paths from '@src/common/constants/Paths';
 import PartieRoutes from './PartieRoutes';
@@ -56,7 +56,7 @@ interface bodyRaison {
 function validerInvalidationPartie(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   if (req.body === null) {
     res
@@ -87,7 +87,7 @@ partieRouter.post(Paths.Parties.add, PartieRoutes.add, validerAjoutPartie);
 partieRouter.put(
   Paths.Parties.invalider,
   PartieRoutes.invalider,
-  validerInvalidationPartie
+  validerInvalidationPartie,
 );
 partieRouter.put(Paths.Parties.valider, PartieRoutes.valider);
 partieRouter.delete(Paths.Parties.delete, PartieRoutes.delete);

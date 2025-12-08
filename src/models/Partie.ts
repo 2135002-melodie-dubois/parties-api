@@ -38,13 +38,13 @@ export interface IPartie {
 const NomJoueurSchema = new Schema<INomJoueur>({
   identifiant: {
     type: String,
-    required: [true, "L'identifiant du joueur est requis"],
+    required: [true, 'L\'identifiant du joueur est requis'],
     validate: {
       validator: function (v: string) {
         return /\w+/.test(v);
       },
       message:
-        "L'identifiant doit etre seulment compose de lettres et de nombres",
+        'L\'identifiant doit etre seulment compose de lettres et de nombres',
     },
   },
   surnom: {
@@ -54,7 +54,8 @@ const NomJoueurSchema = new Schema<INomJoueur>({
         return /[A-z]{1,5}/.test(v);
       },
       message:
-        'Le surnom ne doit etre que des lettres et ne peut contenir plus de 5 caracteres',
+        'Le surnom ne doit etre que des lettres' +
+        ' et ne peut contenir plus de 5 caracteres',
     },
   },
 });
@@ -64,7 +65,7 @@ const CauseMortSchema = new Schema<ICauseMort>({
     type: String,
     enum: {
       values: ['Faim', 'Ennemi', 'Fatigue'],
-      message: "La cause de mort n'est pas une valeur connue",
+      message: 'La cause de mort n\'est pas une valeur connue',
     },
     required: [true, 'La cause de mort est requise'],
   },
@@ -74,11 +75,11 @@ const CauseMortSchema = new Schema<ICauseMort>({
 const EnnemiSchema = new Schema<IEnnemi>({
   nom: {
     type: String,
-    required: [true, "Le nom de l'ennemi est requis"],
+    required: [true, 'Le nom de l\'ennemi est requis'],
   },
   estAggressif: {
     type: Boolean,
-    required: [true, "L'aggessivite de l'ennemi doit etre connue"],
+    required: [true, 'L\'aggessivite de l\'ennemi doit etre connue'],
   },
   aGagne: {
     type: Boolean,
@@ -86,7 +87,7 @@ const EnnemiSchema = new Schema<IEnnemi>({
   },
   valeur: {
     type: Number,
-    required: [true, "L'ennemi doit avoir une valeur en points"],
+    required: [true, 'L\'ennemi doit avoir une valeur en points'],
   },
 });
 
